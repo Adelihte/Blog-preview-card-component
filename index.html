@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Figtree;
+      display: flex;
+      flex-direction: column;
+      background: hsl(47, 88%, 63%);
+      min-height: 100vh;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    .blogcard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: hsl(0, 0%, 100%);
+      max-width: 350px;
+      padding: 20px;
+      border-left: 3px solid rgba(0, 0, 0, .5);
+      border-top: 3px solid rgba(0, 0, 0, .5);
+      border-radius: 20px;
+      box-shadow: 10px 10px 1px 3px hsl(0, 0%, 7%);
+    }
+
+    @media (min-width: 768px) {
+      .blogcard {
+        min-width: 450px;
+      }
+    }
+
+    .blogimage {
+      width: 100%;
+    }
+
+    .blogimage img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .learningbox {
+      align-self: flex-start;
+      margin-top: 10px;
+      background: hsl(47, 88%, 63%);
+      height: 35px;
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+      font-weight: 900;
+      margin: 12px 0;
+    }
+
+    #publish {
+      align-self: start;
+      color: hsl(0, 0%, 42%);
+      font-weight: 700;
+    }
+
+    .intro {
+      margin: 15px 0;
+      line-height: 1.4;
+    }
+
+    h2 {
+      font-weight: 900;
+      color: hsl(0, 0%, 7%);
+      font-size: 1.45rem;
+    }
+
+    #pintro {
+      margin: 10px 0;
+      color: hsl(0, 0%, 42%);
+      font-weight: 600;
+    }
+
+    .avatar {
+      align-self: flex-start;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .avatar p {
+      font-weight: 900;
+    }
+
+    img {
+      width: 21%;
+    }
+
+    .attribution {
+      font-size: 0.6875rem;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section class="blogcard">
+      <div class="blogimage">
+        <img src="https://i.ibb.co/HTc1mHFV/image.png" alt="blogimage">
+      </div>
+      <div class="learningbox">
+        Learning
+      </div>
+      <p id="publish">
+        Published 21 Dec 2023
+      </p>
+      <section class="intro">
+        <h2>
+          HTML & CSS foundations
+          </h3>
+          <P id="pintro">
+            These languages are the backbone of every website, defining structure, content, and presentation.
+          </P>
+      </section>
+      <section class="avatar">
+          <img src="https://i.ibb.co/PZ2dqdnF/image.png" alt="image">
+        <p> Greg Hooper </p>
+      </section>
+    </section>
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">ADEBISI DANIEL</a>.
+  </footer>
+
+</body>
+
+</html>
+<!--
+<img src="https://i.ibb.co/HTc1mHFV/image.png" alt="image" border="0">
